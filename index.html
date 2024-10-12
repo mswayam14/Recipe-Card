@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pasta Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print-styles.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <div class="recipe-header">
+            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Pasta Image" class="recipe-image">
+            <div class="recipe-info-header">
+                <h1>Delicious Pasta</h1>
+                <p>A classic Italian dish made with love.</p>
+                <p>Cooking Time: 20 minutes</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipe-ingredients">
+                <h2>Ingredients</h2>
+                <div class="ingredient-grid">
+                    <div class="ingredient-item" data-quantity="200" data-unit="g">
+                        <h3>Pasta</h3>
+                        <p><span class="quantity">200</span>g</p>
+                    </div>
+                    <div class="ingredient-item" data-quantity="2" data-unit="cups">
+                        <h3>Tomato Sauce</h3>
+                        <p><span class="quantity">2</span> cups</p>
+                    </div>
+                    <div class="ingredient-item" data-quantity="1" data-unit="">
+                        <h3>Onion</h3>
+                        <p><span class="quantity">1</span>, chopped</p>
+                    </div>
+                    <div class="ingredient-item" data-quantity="2" data-unit="cloves">
+                        <h3>Garlic</h3>
+                        <p><span class="quantity">2</span> cloves, minced</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Salt and Pepper</h3>
+                        <p>To taste</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Fresh Basil Leaves</h3>
+                        <p>For garnish</p>
+                    </div>
+                    <div class="servings-adjuster">
+                        <label for="servings">Adjust servings:</label>
+                        <input type="number" id="servings" name="servings" min="1" value="4">
+                        <button id="print-recipe" class="print-button">Print Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-instructions">
+                <button id="toggle-instructions">Show Instructions</button>
+                <div id="instructions" class="hidden">
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Boil the pasta according to package instructions.</li>
+                        <li>In a pan, sauté the onion and garlic until translucent.</li>
+                        <li>Add the tomato sauce and let it simmer for 10 minutes.</li>
+                        <li>Mix the cooked pasta with the sauce.</li>
+                        <li>Season with salt and pepper.</li>
+                        <li>Garnish with fresh basil leaves and serve hot.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="timer-container">
+                <div id="timer">20:00</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <button id="start-cooking">Start Cooking</button>
+                <button id="reset-timer" class="hidden">Reset</button>
+                <button id="pause-cooking" class="hidden">Pause</button>
+                <button id="resume-cooking" class="hidden">Resume</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
